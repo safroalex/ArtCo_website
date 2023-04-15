@@ -288,27 +288,29 @@ hr {
 /* card */
 
 .card {
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 }
 
 .card__item {
-    margin-top: 80px;
     width: 380px;
-    position: relative;
+}
 
+.card__inner {
+    position: relative;
     background-color: #95e1d3;
 }
 
-.card__item:hover .card__img {
+.card__inner:hover .card__img {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.card__item:hover .card__img img {
+.card__inner:hover .card__img img {
     opacity: .1;
 }
 
-.card__item:hover .card__text {
+.card__inner:hover .card__text {
     opacity: 1;
 }
 
@@ -341,6 +343,25 @@ hr {
     transform: translate3d(0, -50%, 0);
 
     transition: opacity .2s line-height;
+}
+
+.card__info {
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+.card__name {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card__prof {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
 }
 
 /* Statisctics */
