@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
@@ -24,6 +25,12 @@
                     <a class="nav__link" href="#">Blog</a>
                     <a class="nav__link" href="#">Work</a>
                     <a class="nav__link" href="#">Contact</a>
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
                 </nav>
             </div>
         </div>
@@ -43,16 +50,20 @@
             <div class="container">
                 <div class="slider__inner">
                     <div class="slider__item active">
-                        <span class="slider__num">01</span> Intro
+                        <span class="slider__num">01</span> 
+                        <span class="slider__text">Intro</span>
                     </div>
                     <div class="slider__item">
-                        <span class="slider__num">02</span> Work
+                        <span class="slider__num">02</span> 
+                        <span class="slider__text">Work</span>
                     </div>
                     <div class="slider__item">
-                        <span class="slider__num">03</span> About
+                        <span class="slider__num">03</span> 
+                        <span class="slider__text">About</span>
                     </div>
                     <div class="slider__item">
-                        <span class="slider__num">04</span> Contacts
+                        <span class="slider__num">04</span> 
+                        <span class="slider__text">Contacts</span>
                     </div>
                 </div>
             </div>
@@ -397,7 +408,7 @@
                     </div>
                     <div class="card__info">
                         <div class="card__name">Alexander Kakichev</div>
-                        <div class="card__prof">Ensemble</div>
+                        <div class="card__prof">Admin</div>
                     </div>
                 </div><!-- /.card__item -->
             </div> <!-- /.card -->
@@ -539,7 +550,7 @@
 
             <div class="clients">
                 <div class="clients__item">
-                    <img class="clients__photo" src="http://placehold.it/110" alt="">
+                    <img class="clients__photo" src="assets/images/clients/1.png" alt="">
                     <div class="clients__content">
                         <div class="clients__name">Matthew Dix</div>
                         <div class="clients__prof">Владелец Ресторана</div>
@@ -549,7 +560,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="http://placehold.it/110" alt="">
+                    <img class="clients__photo" src="assets/images/clients/2.png" alt="">
                     <div class="clients__content">
                         <div class="clients__name">Nick Karvounis</div>
                         <div class="clients__prof">Владелец Ресторана</div>
@@ -559,7 +570,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="http://placehold.it/110" alt="">
+                    <img class="clients__photo" src="assets/images/clients/3.png" alt="">
                     <div class="clients__content">
                         <div class="clients__name">Jaelynn Castillo </div>
                         <div class="clients__prof">Владелец Ресторана</div>
@@ -569,7 +580,7 @@
                 </div>
 
                 <div class="clients__item">
-                    <img class="clients__photo" src="http://placehold.it/110" alt="">
+                    <img class="clients__photo" src="assets/images/clients/4.png" alt="">
                     <div class="clients__content">
                         <div class="clients__name">Mike Petrucci</div>
                         <div class="clients__prof">Владелец Ресторана</div>
@@ -699,9 +710,11 @@
 
             <div class="footer__inner">
                 <div class="footer__col  footer__col--first">
-                    <div class="footer__logo">MoGo</div>
-                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-    
+                    <div class="footer__logo">MASHA+</div>
+                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+
                     <div class="footer__social">
                         <div class="footer__social-header">
                             <b>15k</b> followers
@@ -721,16 +734,80 @@
                     </div>
 
                     <form class="subscribe" action="/" method="post">
-                        <input class="subscribe__input" type="email" name="name" 
-                        placeholder="Your Email...">
+                        <input class="subscribe__input" type="email" name="name" placeholder="Your Email...">
                         <button class="subscribe__btn" type="submit">Subscribe</button>
                     </form>
                 </div><!-- /.footer__col -->
 
-                <div class="footer__col footer__col--second">2</div>
-                <div class="footer__col footer__col--third">3</div>
+                <div class="footer__col footer__col--second">
+                    <div class="footer__title">Blogs</div>
+
+                    <div class="blogs">
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/1.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                <div class="blogs__date">Jan 8, 2016</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/2.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor</a>
+                                <div class="blogs__date">Jan 8, 2016</div>
+                            </div>
+                        </div>
+
+                        <div class="blogs__item">
+                            <img class="blogs__img" src="assets/images/blog/3.jpg" alt="">
+                            <div class="blogs__content">
+                                <a class="blogs__title" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                                <div class="blogs__date">Jan 8, 2016</div>
+                            </div>
+                        </div>
+                    </div><!-- /.blogs -->
+                </div>
+
+                <div class="footer__col footer__col--third">
+                    <div class="footer__title">Instagram</div>
+
+                    <div class="instagram">
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/1.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/2.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/3.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/4.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/5.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/6.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/7.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/8.jpg" alt="">
+                        </a>
+                        <a class="instagram__item" href="#" target="_blank">
+                            <img src="assets/images/instagram/9.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
 
             </div><!-- /.footer__inner-->
+
+            <div class="copyright">
+                2023 MASHA free PSD template by <span>Laaqiq</span>
+            </div>
 
         </div><!-- /.container-->
     </footer>
