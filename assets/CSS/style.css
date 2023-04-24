@@ -261,9 +261,7 @@ hr {
 
 .section--map {
     padding: 40px 0;
-    background: #e6e6e6 url("../images/map-bg.jpg") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    background: #e6e6e6 url("../images/map-bg.jpg") center no-repeat / cover;
 }
 
 .section__header {
@@ -306,13 +304,15 @@ hr {
 
 /* Card */
 .card {
-    margin-top: 80px;
+    margin: 80px -15px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .card__item {
-    width: 380px;
+    width: 33.33333%;
+    padding: 0 15px;
 }
 
 .card__inner {
@@ -340,6 +340,8 @@ hr {
 
 .card__img img {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity .1s linear;
 }
 
@@ -392,6 +394,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat__item {
@@ -426,13 +429,18 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services__item {
-    flex: 1 1 0;
-    padding-left: 85px;
-    padding-right: 35px;
+    width: 33.33333%;
+    padding: 0 35px 40px 85px;
     position: relative;
+    margin-bottom: 40px;
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -466,6 +474,8 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices__item--iphone {
@@ -479,12 +489,20 @@ hr {
 /* We do */
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
 }
 
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Accordion */
 
@@ -675,8 +693,8 @@ hr {
     align-items: center;
 }
 
-/* Works */
 
+/* Works */
 .works {
     display: flex;
 }
@@ -687,6 +705,7 @@ hr {
 
 .works__item {
     position: relative;
+
     background: linear-gradient(to bottom, #f38181, #fce38a);
 }
 
@@ -704,7 +723,7 @@ hr {
     height: auto;
 
     transition: opacity .2s linear;
-} 
+}
 
 .works__info {
     width: 100%;
@@ -735,6 +754,8 @@ hr {
     font-weight: 300;
     font-style: italic;
 }
+
+
 
 /* Clients */
 .clients {
@@ -792,6 +813,7 @@ hr {
     background-color: #f38181;
 }
 
+
 /* Blog */
 
 .blog {
@@ -817,9 +839,9 @@ hr {
 .blog__date {
     padding: 10px 20px;
 
-    background-color: #95e1e3;
-   
-    font-style: normal;
+    background-color: #95e1d3;
+
+    font-style: italic;
     font-size: 15px;
     color: #fff;
     font-weight: 300;
@@ -839,7 +861,7 @@ hr {
 }
 
 .blog__content {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .blog__title {
@@ -884,13 +906,12 @@ hr {
     color: #95e1d3;
 }
 
+
 /* Map */
 
 .map {
     text-align: center;
-
 }
-
 
 .map__title {
     font-size: 24px;
@@ -918,8 +939,9 @@ hr {
     text-decoration: underline;
 }
 
-/* Footer */
 
+
+/* Footer */
 .footer {
     padding-top: 65px;
 
@@ -985,11 +1007,10 @@ hr {
     font-weight: 300;
 }
 
-
 .footer__social-content a {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;    
+    margin-left: 10px;
 
     font-size: 18px;
     color: #95e1d3;
@@ -1002,6 +1023,8 @@ hr {
     color: #333;
     text-transform: uppercase;
 }
+
+
 
 /* Blogs */
 .blogs__item {
@@ -1020,8 +1043,8 @@ hr {
 }
 
 .blogs__title {
-    margin-bottom: 5px;
     display: block;
+    margin-bottom: 5px;
 
     color: #333;
     font-size: 12px;
@@ -1041,6 +1064,7 @@ hr {
     font-weight: 300;
 }
 
+
 /* Instagram */
 .instagram {
     display: flex;
@@ -1056,6 +1080,7 @@ hr {
 .instagram__item img {
     display: block;
 }
+
 
 /* Subscribe */
 .subscribe {
@@ -1117,8 +1142,8 @@ hr {
     outline: 0;
 }
 
-/* Copyright */
 
+/* Copyright */
 .copyright {
     padding: 20px 0;
 
@@ -1133,6 +1158,9 @@ hr {
     color: #f38181;
 }
 
+
+
+
 @media (max-width: 1230px) {
 
     /* Intro */
@@ -1143,6 +1171,7 @@ hr {
     .intro__title {
         font-size: 120px;
     }
+
 }
 
 @media (max-width: 990px) {
@@ -1155,16 +1184,72 @@ hr {
     .intro__title {
         font-size: 80px;
     }
+
+    /* Stat */
+    .stat {
+       justify-content: center;
+    }
+
+    .stat__item {
+        flex: none;
+        width: 33.33333%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        border: 0;
+    }
+
+    .stat__item:last-child {
+        border-right: 0;
+    }
+
+    /* Services */
+    .services__item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services__item--border {
+        border-bottom: 0;
+    }
+
 }
 
 @media (max-width: 770px) {
 
     /* Nav */
-
     .nav {
         display: none;
     }
-    
+
+
+    /* Section */
+    .section {
+        padding: 40px 0;
+    }
+
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+
+    /* Card */
+    .card {
+        margin-top: 50px;
+        justify-content: center;
+    }
+
+    .card__item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .card__item:last-child {
+        margin-bottom: 0;
+    }
+
+
     /* Slider */
     .slider__text {
         display: none;
@@ -1173,7 +1258,34 @@ hr {
     .slider__item.active:before {
         width: 50%;
     }
+
+    /* Services */
+    .services {
+        justify-content: center;
+    }
+
+    .services__item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services__icon {
+        left: 0;
+    }
+
+
+    /* Wedo */
+    .wedo__img {
+        display: none;
+    }
+
+    .wedo__item {
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 575px) {
 
@@ -1185,4 +1297,49 @@ hr {
     .intro__title {
         font-size: 40px;
     }
+
+    /* Section */
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__suptitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+
+    /* Stat */
+    .stat__item {
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .stat__item:last-child {
+        border-bottom: 0;
+    }
+
+    .stat__count {
+        font-size: 52px;
+    }
+
+
+    /* Devices */
+    .devices {
+        max-width: 320px;
+    }
+
+    .devices__item--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
+    }
+
 }
